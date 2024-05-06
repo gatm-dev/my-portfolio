@@ -1,0 +1,82 @@
+/*
+    #2a2424 FONDO
+    #808080 GRIS 1
+    #c1c1c1 GRIS 2
+    #28c0c2 VERDE
+    #d94949 ROJO
+*/
+
+@keyframes particles {
+  0% {
+    background-color: #2a2424;
+  }
+  50% {
+    background-color: #002c49;
+  }
+  50% {
+    background-color: #04252b;
+  }
+  75% {
+    background-color: #022950;
+  }
+  100% {
+    background-color: #2a2424;
+  }
+}
+
+body {
+  background-color: #f8f9fa !important;
+  color: #000 !important;
+
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.logoFormat {
+  image-rendering: optimizeQuality;
+}
+
+.bg-dark-custom {
+  background-color: #2a2424 !important;
+}
+.text-muted-custom {
+  color: #28c0c2 !important;
+}
+.card-custom {
+  border: none;
+  border-radius: 0;
+  background-color: #f8f9fa;
+}
+.profile-pic {
+  width: 8em;
+  height: 8rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.smaller-name {
+  font-size: 1.5rem;
+}
+.social-links a {
+  color: #6c757d;
+  margin-right: 10px;
+}
+.social-links a:hover {
+  color: #28c0c2;
+}
+.ghost {
+  opacity: 0.5;
+  box-shadow: #fff 0 0 1.5rem;
+}
+
+#header {
+  overflow: hidden;
+  animation: particles 10s ease-in-out alternate infinite;
+  box-shadow: 0 0 1.5rem inset #000;
+  transition: all 0.2s ease-in 0s !important;
+}
+
+.transparentNavBar {
+  opacity: 0.9;
+  box-shadow: none;
+  box-shadow: 0 2rem 1rem #000;
+}

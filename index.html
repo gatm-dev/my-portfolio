@@ -16,134 +16,66 @@
     <link rel="canonical" href="URL_DE_TU_PORTAFOLIO" />
     <link
       rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-    />
-    <link
-      rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
     />
-    <style>
-      /* Estilos personalizados */
-
-      /*
-      2a2424 FONDO
-      808080 GRIS 1
-      c1c1c1 GRIS 2
-      28c0c2 VERDE
-      d94949 ROJO
-      */
-
-      @keyframes particles {
-        0% {
-          background-color: #2a2424;
-        }
-        50% {
-          background-color: #002c49;
-        }
-        100% {
-          background-color: #001a31;
-        }
-      }
-
-      body {
-        background-color: #f8f9fa !important;
-        color: #000 !important;
-
-        margin: 0;
-        overflow-x: hidden;
-      }
-
-      .logoFormat {
-        image-rendering: optimizeQuality;
-      }
-
-      .bg-dark-custom {
-        background-color: #2a2424 !important;
-      }
-      .text-muted-custom {
-        color: #28c0c2 !important;
-      }
-      .card-custom {
-        border: none;
-        border-radius: 0;
-        background-color: #f8f9fa;
-      }
-      .profile-pic {
-        width: 8em;
-        height: 8rem;
-        border-radius: 50%;
-        object-fit: cover;
-      }
-      .smaller-name {
-        font-size: 24px;
-      }
-      .social-links a {
-        color: #6c757d;
-        margin-right: 10px;
-      }
-      .social-links a:hover {
-        color: #28c0c2;
-      }
-      .ghost {
-        opacity: 0.5;
-        box-shadow: #fff 0 0 1.5rem;
-      }
-
-      #header {
-        position: relative;
-        overflow: hidden;
-        animation: particles 10s ease-in-out alternate infinite;
-      }
-    </style>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/style.css" />
   </head>
-  <body class="d-flex flex-column h-100">
-    <!-- Navbar -->
+  <body>
     <nav
-      class="navbar navbar-expand-lg navbar-dark p-xl-5 p-sm-0 p-md-3"
+      class="navbar navbar-dark position-sticky fixed-top navbar-expand-lg p-sm-0 p-md-3 p-xl-5"
       id="header"
     >
-      <div class="container">
+      <div class="container-fluid d-flex flex-row w-100">
         <img
           src="./assets/LOGO-NOMBRE-INV.png"
           alt="Michelle Auxwave"
           width="250"
-          class="logoFormat"
+          class="logoFormat d-none d-sm-none d-md-block d-lg-block d-xl-block"
+          id="logo"
+        />
+        <img
+          src="./assets//ICON-BASE-INV.png"
+          alt="Michelle Auxwave"
+          width="100"
+          class="logoFormat d-block d-sm-block d-md-none d-lg-none d-xl-none"
         />
         <button
           class="navbar-toggler"
           type="button"
-          data-toggle="collapse"
-          data-target="#navbarNav"
-          aria-controls="navbarNav"
           aria-expanded="false"
+          data-bs-toggle="collapse" 
+          data-bs-target="#navbarNav" aria-controls="navbarNav"
           aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ml-auto">
+          <ul class="navbar-nav ms-auto">
             <li class="nav-item">
               <a class="nav-link" href="#about">Acerca de Mí</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#experience">Experiencia Laboral</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#skills">Habilidades</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#videos">Videos</a>
+              <a class="nav-link" href="#experience">Experiencia Laboral</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="ENGLISH_VERSION_URL">English</a>
-            </li>
+            <div class="vr text-light  fs-2 d-none d-sm-none d-md-block d-lg-block d-xl-block"></div>
+            <hr class="text-light fs-2 d-block d-sm-block d-md-none d-lg-none d-xl-none"></hr>
+            <a class="nav-link" href="#audio">Producción de audio</a>
           </ul>
         </div>
       </div>
     </nav>
 
     <!-- Contenido -->
-    <div class="container my-5">
+    <div class="my-5 container">
       <div class="row">
         <!-- Columna izquierda (3/12) -->
         <div class="col-md-3">
@@ -157,7 +89,7 @@
           </div>
           <!-- Nombre y Presentación -->
           <div class="text-center">
-            <h2 class="smaller-name">Michelle Ulises García Trejo</h2>
+            <h2 class="smaller-name">Michelle García</h2>
             <p class="lead">Desarrollador Web Fullstack</p>
             <p>(.NET C# | T-SQL | React - Angular)</p>
             <!-- Redes Sociales -->
@@ -275,58 +207,18 @@
       </div>
     </footer>
 
-    <!-- Google Analytics y scripts adicionales -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      crossorigin="anonymous"
+    ></script>
     <script src="./animejs/anime.min.js"></script>
-
-    <script>
-      const particlesAnimation = (el) => {
-        const particlesContainer = document.getElementById(el);
-        const particleCount = 100;
-        const particleSpeed = 2;
-        const particleSize = 0.5;
-
-        let mouseX = 0;
-        let mouseY = 0;
-
-        function createParticle() {
-          const particle = document.createElement("div");
-
-          particle.classList.add("particle", "ghost");
-          particle.style.position = "absolute";
-          particle.style.borderRadius = "50%";
-          particle.style.width = `${particleSize}rem`;
-          particle.style.height = `${particleSize}rem`;
-          particle.style.left = `${Math.random() * 100}%`;
-          particle.style.top = `${Math.random() * 100}%`;
-          particle.style.opacity = `${Math.random()}`;
-          particle.style.backgroundColor =
-            Math.random() > 0.5 ? "#28c0c2" : "#d94949";
-
-          particlesContainer.appendChild(particle);
-
-          anime({
-            targets: particle,
-            translateX: `${mouseX + (particleSpeed - (Math.random() - 0.5))}%`,
-            translateY: `${mouseY + (particleSpeed - (Math.random() - 0.5))}%`,
-            scale: [1, 0],
-            opacity: [1, 0],
-            easing: "easeOutExpo",
-            duration: 10000,
-            complete: (anim) => particlesContainer.removeChild(particle),
-          });
-        }
-
-        for (let i = 0; i < particleCount; i++) createParticle();
-        setInterval(createParticle, 200);
-
-        this.addEventListener("mousemove", (e) => {
-          mouseX = e.pageX;
-          mouseY = e.pageY;
-        });
-      };
-
-      particlesAnimation("header");
-    </script>
+    <script src="./graphics.js"></script>
   </body>
 </html>
