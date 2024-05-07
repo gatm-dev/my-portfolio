@@ -73,13 +73,26 @@ const particlesAnimation = (el, x, y) => {
 };
 
 window.onload = () => {
+  const containerHeight = particlesContainer.offsetHeight;
+
   this.addEventListener("mousemove", (e) => {
     mouseX = e.pageX;
     mouseY = e.pageY;
   });
 
+  document.getElementById("header").style.height = `${100}vh`;
+  anime({
+    targets: '#header',
+    keyframes: [
+      {height: '100vh', opacity: 1, overflow: 'hidden', easing: 'easeInOutCirc', duration: 3500},
+      {height: `${containerHeight}px`, opacity: 0.9, easing: 'easeInOutCirc', duration: 0},
+    ],
+    complete: () => {
+      document.getElementById("header").classList.add("p-sm-0", "p-md-3", "p-xl-5");
+    }
+  });
+
   this.addEventListener("scroll", () => {
-    const containerHeight = particlesContainer.offsetHeight;
     scrollX = window.scrollX;
     scrollY = window.scrollY;
 
@@ -93,4 +106,6 @@ window.onload = () => {
   });
 
   particlesAnimation(particlesContainer, mouseX, mouseY);
+
+
 };

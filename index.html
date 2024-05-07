@@ -58,7 +58,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link" href="#about">Acerca de Mí</a>
+              <button class="nav-link" onclick="focused('aboutme')">Acerca de Mí</button>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#skills">Habilidades</a>
@@ -78,7 +78,7 @@
     <div class="my-5 container">
       <div class="row">
         <!-- Columna izquierda (3/12) -->
-        <div class="col-md-3">
+        <div class="col-md-3" id="aboutme">
           <div class="text-center mb-4">
             <!-- Foto de perfil -->
             <img
