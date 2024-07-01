@@ -1,0 +1,69 @@
+:root {
+  --white-01: #ebebeb;
+  --white-02: #d1d0d0;
+  --dark-01: #1f1d1d;
+  --dark-02: #2a2424;
+  --gray-01: #555555;
+  --gray-02: #808080;
+  --gray-03: #c1c1c1;
+  --aqua-01: #28c0c2;
+  --red-01: #d94949;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.ghost {
+  opacity: 0.5;
+  box-shadow: #fff 0 0 1.5rem;
+}
+
+#header {
+  overflow: hidden;
+  animation: particles 10s ease-in-out alternate infinite;
+  box-shadow: 0 0 1.5rem inset #000;
+  transition: all 0.2s ease-in 0s !important;
+}
+
+.customSocialNavBar {
+  background-color: var(--gray-01);
+}
+
+.customSocialNavBar a,
+.customSocialNavBar .bi::before {
+  color: var(--white-01);
+  transition: all ease-out 0.2s;
+}
+
+.customSocialNavBar a:hover,
+.customSocialNavBar i:hover,
+.customSocialNavBar .bi:hover::before {
+  color: var(--aqua-01);
+}
+
+.customNavBar {
+  background-color: var(--dark-01);
+  color: var(--white-01);
+}
+
+.customNavBar .navbar-nav .nav-link {
+  color: var(--white-02);
+  text-shadow: 0 0 1rem var(--white-02);
+}
+
+.customHeader {
+  background-color: var(--gray-03);
+
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    180deg,
+    var(--dark-02) 0%,
+    var(--gray-02) 80%,
+    var(--white-02) 100%
+  );
+}
